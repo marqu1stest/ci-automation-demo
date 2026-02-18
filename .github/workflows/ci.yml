@@ -30,7 +30,5 @@ jobs:
         run: flake8 app tests
 
       - name: Run Unit Tests
-        run: |
-          export PYTHONPATH=$(pwd)
-	  pytest
+        run: pytest
 
